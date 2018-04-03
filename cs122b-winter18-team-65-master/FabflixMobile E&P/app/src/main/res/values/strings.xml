@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FabflixMobile</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="red">#CC0000</color>
+    <color name="blue">#0080FF</color>
+    <color name="green">#80FF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_yellow">#ffffb3</color>
+    <color name="yellow">#ffff00</color>
+    <color name="light_red">#ffb3d9</color>
+    <color name="light_light_yellow">#ffecb3</color>
+
+    <string name="login"> login </string>
+    <string name="index"> index </string>
+    <string name="movielist"> movielist </string>
+</resources>

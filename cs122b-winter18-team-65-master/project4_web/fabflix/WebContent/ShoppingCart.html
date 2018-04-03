@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="style.css">
+
+<title>fablix</title>
+</head>
+<body>
+	<h1>FabFlix</h1>
+	
+	<h2>Shopping Cart</h2>
+
+	<table id=star_table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Movie</th>
+				<th>Quantity</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody id=cart_table_body>
+		</tbody>
+	</table>
+	<input type="button" onclick="return jump_to_payment();" value="Proceed to Checkout">
+	
+
+	<!-- include jQuery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- include our own JS file -->
+	<script src="./ShoppingCart.js"></script>
+</body>
+
+
+
+</html>

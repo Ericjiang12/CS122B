@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+form[name=searchform] {
+	width: 60%;
+	height:300px;
+	padding: 15px;
+    margin: 20px 0 30px 5px;
+}
+
+label {
+    float: left;
+    width: 150px;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+.genre {
+	font-size: 1.5em;
+}
+
+.title {
+	font-size: 1.8em;
+}
+.autocomplete-suggestions { border: 2px solid #999; background: #ffffff; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #33cc33; }
+.autocomplete-suggestions strong { font-weight: bold; color: red; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- include jquery autocomplete JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+<title>index page</title>
+</head>
+<body>
+	<h1>FabFlix</h1>
+	<div class="normal-box">
+	<input type="button" onclick="window.location.href='/fabflix/ShoppingCart.html';" value="Proceed to Checkout"/>
+	</div>
+	<div class="inline-box">
+	<h2>Find Your Favorite Movie: </h2>
+	<form name="searchform" onSubmit="return dosearch();" >
+ 		<label>Title: </label>
+ 		<input type="text" placeholder="Search.." name="search_title"/><br/>
+ 		<label>Year: </label>
+ 		<input type="text" placeholder="Search.." name="search_year"/><br/>
+ 		<label>Director: </label>
+ 		<input type="text" placeholder="Search.." name="search_director"/><br/>
+ 		<label>Star's name: </label>
+ 		<input type="text" placeholder="Search.." name="search_name"/><br/>
+ 		<input type="submit" name="SearchSubmit" value="Search">
+	</form>
+	</div>
+	
+	<div class="inline-box">
+	<h2>AutoComplete</h2>
+	<form name="nfs_form" onSubmit="return handleNormalSearch();" >
+	 <input type="text" name="movies" id="autocomplete"/>
+	 <input type="submit" name="SearchSubmit" value="Search">
+	</form>
+	</div>
+	
+	<div class="inline-box">
+	<h2>Browse by genres</h2>
+	<p id=star_table_body></p>
+
+	<h2>Browse by title</h2>
+	<p id=title_table_body></p>
+	</div>
+
+	<!-- include jQuery and Bootstrap JS -->
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- include our own JS file -->
+	<script src="./index.js"></script>
+</body>
+
+
+
+</html>

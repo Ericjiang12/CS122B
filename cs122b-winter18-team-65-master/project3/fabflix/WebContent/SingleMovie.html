@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="style.css">
+
+<title>fablix</title>
+</head>
+<body>
+	<h1>FabFlix</h1>
+	<h2>Single Movie</h2>
+	<input type="button" onclick="window.location.href='/fabflix/ShoppingCart.html';" value="Proceed to Checkout">
+	<table id=star_table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Movie id</th>
+				<th>Title</th>
+				<th>Year</th>
+				<th>Director</th>
+				<th>Genre</th>
+				<th>Stars</th>
+			</tr>
+		</thead>
+		<tbody id=single_movie_table_body>
+		</tbody>
+	</table>
+
+	<!-- include jQuery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- include our own JS file -->
+	<script src="./SingleMovie.js"></script>
+</body>
+
+
+
+</html>

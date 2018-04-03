@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="style.css">
+<style>
+input[type=text] {
+	float: left;
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 80px;
+    background-color: white;
+    background-image: url("pictures/search.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 5px 8px; 
+    padding: 5px 20px 5px 40px;
+}
+
+</style>
+
+<title>Movie List Page</title>
+</head>
+<body>
+	<h1>FabFlix</h1>
+	<h2>Movie List</h2>
+	<ul>
+		<li><a href="/fabflix/index.html">Home</a></li>
+		
+  		<li><form><select id="limit_select" onchange="change()">
+			<option value ="">Results per page</option>
+        		<option value="10">10</option>
+        		<option value="25">25</option>
+        		<option value="50">50</option>
+        		<option value="100">100</option>
+    		</select></form></li>
+    		<li><input type="button" onclick="window.location.href='/fabflix/ShoppingCart.html';" value="Proceed to Checkout" /></li>
+	</ul>
+
+	
+	
+	<table id=star_table>
+		<thead>
+			<tr>
+				<th>Movie id</th>
+				<th onclick="sortTable(1)">Title</th>
+				<th onclick="sortTable(2)">Year</th>
+				<th>Director</th>
+				<th>genres of movie </th>
+    				<th>stars of movie</th>
+			</tr>
+		</thead>
+		<tbody id=star_table_body>
+		</tbody>
+	</table>
+	<button type="button" onclick="prev_page()">Prev</button>
+ 	<button type="button" onclick="next_page()">Next</button>
+ 
+	<!-- include jQuery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- include our own JS file -->
+	<script src="./MovieList.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<link rel="stylesheet" href="style.css">
+
+<title>Customer Information</title>
+</head>
+<body>
+	<h1>FabFlix</h1>
+	<h3>Please input your payment detail:</h3>
+	<form name="info_form" onSubmit="return check_info();">
+		<table style="width:100%">
+ 			<tr><td>First Name: <input type="text" placeholder="Enter First name" name="fn"></td></tr>
+ 			<tr><td>Last Name:  <input type="text" placeholder="Enter Last name"  name="ln"></td></tr>
+ 			<tr><td>Credit Card Number: <input type="text" placeholder="Enter credit card number" name="ccid"></td></tr>
+ 			<tr><td>Expiration date: <input type="text" placeholder="Enter Expiration date" name="exp_date"></td></tr>
+ 			<tr><td><input type="submit" value="Submit"></td></tr>
+ 		</table>
+	</form>
+	
+	<div id="info_error_message"></div>
+	
+	
+<!-- include jQuery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- include our own JS file -->
+	<script src="./ConfirmInfo.js"></script>
+	
+</body>
+</html>

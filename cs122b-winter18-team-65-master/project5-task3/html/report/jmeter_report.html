@@ -1,0 +1,114 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: linen;
+}
+
+td {
+    border-top-style: solid;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%">
+  <tr style="font-weight:bold; background-color: orange">
+    <td width="300px">Single-instance version cases</td>
+    <td>Graph Results Screenshot</td>
+    <td>Average Query Time(ms)</td>
+    <td>Average Search Servlet Time(ms)</td>
+    <td>Average JDBC Time(ms)</td>
+    <td>Analysis</td>
+  </tr>
+  <tr>
+    <td>Case 1: HTTP/1 thread</td>
+    <td><img src="graph_results_case1.png" alt="Graph Results Screenshot Case 1" style="width:304px;height:228px;"></td>
+    <td>109 ms</td>
+    <td>42379471.4489 ns</td>
+    <td>42188464.9977 ns</td>
+    <td>--</td>
+  </tr>
+  <tr>
+    <td>Case 2: HTTP/10 threads</td>
+    <td><img src="graph_results_case2.png" alt="Graph Results Screenshot Case 2" style="width:304px;height:228px;"></td>
+    <td>592 ms</td>
+    <td>384812281.564 ns</td>
+    <td>384698462.084 ns</td>
+    <td>--</td>
+  </tr>
+  <tr>
+    <td>Case 3: HTTPS/10 threads</td>
+    <td><img src="graph_results_case3.png" alt="Graph Results Screenshot Case 3" style="width:304px;height:228px;"></td>
+    <td>641 ms</td>
+    <td>388747542.48 ns</td>
+    <td>388588796.112 ns</td>
+    <td>--</td>
+  </tr>
+  <tr>
+    <td>Case 4: HTTP/10 threads/No prepared statements</td>
+    <td><img src="graph_results_case4.png" alt="Graph Results Screenshot Case 4" style="width:304px;height:228px;"></td>
+    <td>620 ms</td>
+    <td>387188088.61 ns</td>
+    <td>387064892.228 ns</td>
+    <td>--</td>
+  </tr>
+  <tr>
+    <td>Case 5: HTTP/10 threads/No connection pooling</td>
+    <td><img src="graph_results_case5.png" alt="Graph Results Screenshot Case 4" style="width:304px;height:228px;"></td>
+    <td>633 ms</td>
+    <td>396295018.681 ns</td>
+    <td>396105086.474 ns</td>
+    <td>--</td>
+  </tr>
+
+</table> 
+
+
+<table style="width:100%">
+  <tr style="font-weight:bold; background-color: orange">
+    <td width="300px">Scaled version cases</td>
+    <td>Graph Results Screenshot</td>
+    <td>Average Query Time(ms)</td>
+    <td>Average Search Servlet Time(ms)</td>
+    <td>Average JDBC Time(ms)</td>
+    <td>Analysis</td>
+  </tr>
+  <tr>
+    <td>Case 1: HTTP/1 thread</td>
+    <td><img src="graph_results_case6.png" alt="Graph Results Screenshot Case 1" style="width:304px;height:228px;"></td>
+    <td>147 ms</td>
+    <td>48506029.3914 ns</td>
+    <td>48242225.4852 ns</td>
+    <td>--</td>
+  </tr>
+  <tr>
+    <td>Case 2: HTTP/10 threads</td>
+    <td><img src="graph_results_case7.png" alt="Graph Results Screenshot Case 2" style="width:304px;height:228px;"></td>
+    <td>251 ms</td>
+    <td>153979435.8105 ns</td>
+    <td>153827260.4435 ns</td>
+    <td>--</td>
+  </tr>
+  <tr>
+    <td>Case 3: HTTP/10 threads/No prepared statements</td>
+    <td><img src="graph_results_case8.png" alt="Graph Results Screenshot Case 4" style="width:304px;height:228px;"></td>
+    <td>250 ms</td>
+    <td>140596632.9555 ns</td>
+    <td>140441398.998 ns</td>
+    <td>--</td>
+  </tr>
+  <tr>
+    <td>Case 4: HTTP/10 threads/No connection pooling</td>
+    <td><img src="graph_results_case9.png" alt="Graph Results Screenshot Case 4" style="width:304px;height:228px;"></td>
+    <td>256 ms</td>
+    <td>157249075.256 ns</td>
+    <td>157013481.3935 ns</td>
+    <td>--</td>
+  </tr>
+
+</table> 
+
+</body>
+</html>

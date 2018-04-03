@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<style>
+table {
+	display: none;
+}
+</style>
+
+</head>
+<body>
+	<h1>FabFlix</h1>
+	<h2>Dashboard</h2>
+ 	<h3 onclick="show_detail('metadata')"> MetaData</h3>
+ 	<table id="metadata">
+		<thead><tr>
+			<th>Table</th>
+			<th>Attributes </th>
+		</tr></thead>
+		<tbody id=metadata_table_body></tbody>
+	</table>
+
+<h3 onclick="show_detail('add_star')">Add a new star</h3>
+	
+	<form name="ns_form" onSubmit="return do_ns();" >
+		<table id="add_star" style="width:100%">
+ 			<tr><td>Name: <input type="text" placeholder="Enter name"  name="new_name" style="width: 100px;position:relative;left:27px;"></td></tr>
+ 			<tr><td>BirthYear: <input type="text" placeholder="Enter birth year" name="new_year" style="position:relative;left:2px;"></td></tr>
+ 			<tr><td><input type="submit" name="ns_Submit" value="Submit"></td></tr>
+ 		</table>
+	</form>
+	<table id=msg2_table>
+	<tbody id=msg2_table_body></tbody>
+	</table>
+	<div id="ns_error_message"></div>
+
+<h3 onclick="show_detail('add_movie')">Add new movie</h3>
+
+	<form name="nm_form" onSubmit="return do_nm();" >
+		<table id="add_movie" style="width:100%">
+ 			<tr><td>Title: <input type="text" placeholder="Enter title"  name="movie_title" style="width: 100px;position:relative;left:23px;"></td></tr>
+ 			<tr><td>Year: <input type="text" placeholder="Enter year" name="movie_year" style="position:relative;left:23px;"></td></tr>
+ 			<tr><td>Director: <input type="text" placeholder="Enter name of director" name="director_name"></td></tr>
+ 			<tr><td>Star: <input type="text" placeholder="Enter name of star" name="star_name" style="position:relative;left:27px;"></td></tr>
+ 			<tr><td>Genre: <input type="text" placeholder="Enter Genre" name="genre_name" style="position:relative;left:14px;"></td></tr>
+ 			<tr><td><input type="submit" name="nm_Submit" value="Submit"></td></tr>
+ 		</table>
+	</form>
+	
+	<table id=msg_table>
+	<tbody id=msg_table_body>
+	</tbody>
+	</table>
+	
+	<div id="nm_error_message"></div>
+
+
+<h3 onclick="show_detail('add_info')">Add information to a related movie</h3>
+
+	<form name="add_info_form" onSubmit="return do_addinfo();" >
+		<table id="add_info" style="width:100%">
+ 			<tr><td>Title: <input type="text" placeholder="Enter title"  name="movie_title" style="width: 100px;position:relative;left:23px;"></td></tr>
+ 			<tr><td>Year: <input type="text" placeholder="Enter year" name="movie_year" style="position:relative;left:23px;"></td></tr>
+ 			<tr><td>Star: <input type="text" placeholder="Enter name of star" name="star_name" style="position:relative;left:27px;"></td></tr>
+ 			<tr><td>Genre: <input type="text" placeholder="Enter Genre" name="genre_name" style="position:relative;left:14px;"></td></tr>
+ 			<tr><td><input type="submit" name="nm_Submit" value="Submit"></td></tr>
+ 		</table>
+	</form>
+	
+	<table id=msg1_table>
+		<tbody id=msg1_table_body></tbody>
+	</table>
+	
+	<div id="add_info_error_message"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./_dashboard.js"></script>
+
+
+</body>
+</html>

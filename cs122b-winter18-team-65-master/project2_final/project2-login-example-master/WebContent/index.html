@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+body {background-color: pink;}
+</style>
+  
+<title>fablix</title>
+</head>
+<body>
+	<h1>Fablix</h1>
+	<input type="button" onclick="window.location.href='/project2-login-example/ShoppingCart.html';" value="Proceed to Checkout" style="position:absolute;right:20px;"/>
+	
+	<h3>Find Your Favorite Movie:</h3>
+	<form name="searchform" onSubmit="return dosearch();" >
+		<table style="width:100%">
+ 			<tr><td>Title: <input type="text" placeholder="Enter title" name="search_title" style="position:relative;left:52px;"></td></tr>
+ 			<tr><td>Year: <input type="text" placeholder="Enter year"  name="search_year" style="width: 100px;position:relative;left:52px;"></td></tr>
+ 			<tr><td>Director: <input type="text" placeholder="Enter director" name="search_director" style="position:relative;left:25px;"></td></tr>
+ 			<tr><td>Star's name: <input type="text" placeholder="Enter first name or last name" name="search_name"></td></tr>
+ 			<tr><td><input type="submit" name="SearchSubmit" value="Search"></td></tr>
+ 		</table>
+	</form>
+	
+	<h3 style="position:absolute;top:400px; right:565px;">Browse by genres </h3>
+	<table id=star_table class="table table-striped">
+		<thead>
+		</thead>
+		<tbody id=star_table_body  style="position:absolute;top:430px;">
+		</tbody>
+	</table>
+	
+	<h3 style="position:absolute;top:320px; right:600px;">Browse by title</h3>
+	<table id=title_table class="table table-striped">
+		<thead>
+		</thead>
+		<tbody id=title_table_body style="position:absolute;top:360px; right:400px;">
+		</tbody>
+	</table>
+
+	<!-- include jQuery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- include our own JS file -->
+	<script src="./index.js"></script>
+</body>
+
+
+
+</html>

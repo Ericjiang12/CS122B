@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+form {
+	width: 95%;
+	height: 400px;
+	margin: 30px 10px 5px 10px;
+	padding: auto;
+}
+
+</style>
+
+<title>Login Page</title>
+</head>
+<body>
+	<h1>FabFlix</h1>
+	<form id="login_form" method="post" action="#">
+		<div class="container">
+			<select id="accountselect" name="account">
+    				<option value="user">User</option>
+    				<option value="employee" >Employee</option>
+  			</select>
+      		<label for="uname"><b>Username: </b></label>
+      		<input id="username" type="text" placeholder="Enter Username" name="username" />
+      		<br/>
+      		<label for="psw"><b>Password:  </b></label>
+      		<input id="password" type="password" placeholder="Enter Password" name="password" />
+      		<br/>
+       		<div class="g-recaptcha" data-sitekey="6LdzEEgUAAAAAK4UiKUHkUSiyEEM7MyQ_gv-zmZM"></div>
+      		<br/>
+      		<button type="submit">Login</button>
+    		</div>
+	</form>
+	
+	<div id="login_error_message"></div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./login.js"></script>
+  	<script src='https://www.google.com/recaptcha/api.js'></script> 
+</body>
+</html>
